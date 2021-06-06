@@ -5,7 +5,7 @@ This reproduces a bug I encountered using Apollo Server and the latest version o
 The following behaves as expected
 
 ```
-npm i @types/express/@4.17.11
+npm i @types/express@4.17.11
 npx tsc index.ts --esModuleInterop --skipLibCheck --noEmit --strict
 ```
 
@@ -14,7 +14,7 @@ npx tsc index.ts --esModuleInterop --skipLibCheck --noEmit --strict
 The following throws an error
 
 ```
-npm i @types/express/@4.17.12
+npm i @types/express@4.17.12
 npx tsc index.ts --esModuleInterop --skipLibCheck --noEmit --strict
 
 index.ts:12:26 - error TS2322: Type 'Express' is not assignable to type 'Application'.
